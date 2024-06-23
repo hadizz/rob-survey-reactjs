@@ -76,7 +76,7 @@ const CoffeeRecommendation = () => {
     const response = await fetch('https://script.google.com/macros/s/AKfycbwIgad6cI_Ecrfgo7vv01yClWsHNpe6mXrFQJZIn07AvH8PhUfRbhMV6thEuBJCkW5p/exec', {
       redirect: 'follow',
       method: 'POST',
-      body: JSON.stringify({ name, phone, recommendation: 'test hadiz' }),
+      body: JSON.stringify({ name, phone, recommendation }),
       headers: {
         'Content-Type': 'text/plain;charse=utf=8',
       },
