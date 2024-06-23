@@ -1,102 +1,102 @@
 [
   {
     "id": 1,
-    "question": "How do you feel most mornings?",
+    "question": "صبح ها چطور احساس می کنید؟",
     "options": [
-      { "text": "Calm and relaxed", "score": 1 },
-      { "text": "Energized and productive", "score": 2 },
-      { "text": "Social and interactive", "score": 3 },
-      { "text": "Creative and inspired", "score": 4 }
+      { "text": "آرام و راحت", "score": 1 },
+      { "text": "پرانرژی و مولد", "score": 2 },
+      { "text": "اجتماعی و تعاملی", "score": 3 },
+      { "text": "خلاق و الهام بخش", "score": 4 }
     ]
   },
   {
     "id": 2,
-    "question": "Which environment do you prefer?",
+    "question": "کدام محیط را ترجیح می دهید؟",
     "options": [
-      { "text": "A quiet, cozy space", "score": 1 },
-      { "text": "A bustling, lively area", "score": 2 },
-      { "text": "A stylish, trendy spot", "score": 3 },
-      { "text": "An eclectic, artsy venue", "score": 4 }
+      { "text": "یک فضای آرام و دنج", "score": 1 },
+      { "text": "یک منطقه شلوغ و پرجنب و جوش", "score": 2 },
+      { "text": "یک مکان شیک و مدرن", "score": 3 },
+      { "text": "یک محل هنری و خلاق", "score": 4 }
     ]
   },
   {
     "id": 3,
-    "question": "How do you handle stress?",
+    "question": "چطور با استرس کنار می آیید؟",
     "options": [
-      { "text": "Relaxing and unwinding", "score": 1 },
-      { "text": "Staying active", "score": 2 },
-      { "text": "Talking to friends", "score": 3 },
-      { "text": "Engaging in creative activities", "score": 4 }
+      { "text": "استراحت و آرامش", "score": 1 },
+      { "text": "فعال بودن", "score": 2 },
+      { "text": "صحبت با دوستان", "score": 3 },
+      { "text": "فعالیت‌های خلاقانه", "score": 4 }
     ]
   },
   {
     "id": 4,
-    "question": "What's your favorite weekend activity?",
+    "question": "آخر هفته خود را چگونه می گذرانید؟",
     "options": [
-      { "text": "Reading or watching movies", "score": 1 },
-      { "text": "Outdoor adventures", "score": 2 },
-      { "text": "Socializing with friends", "score": 3 },
-      { "text": "Creative hobbies", "score": 4 }
+      { "text": "خواندن کتاب یا تماشای فیلم", "score": 1 },
+      { "text": "ماجراجویی های خارج از خانه", "score": 2 },
+      { "text": "اجتماعی شدن با دوستان", "score": 3 },
+      { "text": "سرگرمی‌های خلاقانه", "score": 4 }
     ]
   },
   {
     "id": 5,
-    "question": "Which color resonates with you most?",
+    "question": "کدام رنگ برای شما بیشتر جذاب است؟",
     "options": [
-      { "text": "Blue (Calm and serene)", "score": 1 },
-      { "text": "Red (Passionate and energetic)", "score": 2 },
-      { "text": "Green (Balanced and harmonious)", "score": 3 },
-      { "text": "Yellow (Cheerful and optimistic)", "score": 4 }
+      { "text": "آبی", "score": 1 },
+      { "text": "قرمز", "score": 2 },
+      { "text": "سبز", "score": 3 },
+      { "text": "زرد", "score": 4 }
     ]
   },
   {
     "id": 6,
-    "question": "What type of music do you prefer?",
+    "question": "چه نوع موسیقی را ترجیح می دهید؟",
     "options": [
-      { "text": "Classical or instrumental", "score": 1 },
-      { "text": "Rock or pop", "score": 2 },
-      { "text": "Jazz or blues", "score": 3 },
-      { "text": "Indie or alternative", "score": 4 }
+      { "text": "کلاسیک یا بی کلام", "score": 1 },
+      { "text": "راک یا پاپ", "score": 2 },
+      { "text": "جاز یا بلوز", "score": 3 },
+      { "text": "ایندی یا آلترناتیو", "score": 4 }
     ]
   },
   {
     "id": 7,
-    "question": "How do you start your day?",
+    "question": "چطور روز خود را شروع می کنید؟",
     "options": [
-      { "text": "With a relaxing routine", "score": 1 },
-      { "text": "With a workout", "score": 2 },
-      { "text": "With a social activity", "score": 3 },
-      { "text": "With a creative project", "score": 4 }
+      { "text": "با یک روتین آرامش بخش", "score": 1 },
+      { "text": "با ورزش", "score": 2 },
+      { "text": "با یک فعالیت اجتماعی", "score": 3 },
+      { "text": "با یک پروژه خلاقانه", "score": 4 }
     ]
   },
   {
     "id": 8,
-    "question": "What's your go-to break activity?",
+    "question": "وقتی به استراحت نیاز دارید، چه کاری انجام می‌دهید؟",
     "options": [
-      { "text": "Meditating or napping", "score": 1 },
-      { "text": "Walking or exercising", "score": 2 },
-      { "text": "Calling a friend", "score": 3 },
-      { "text": "Drawing or writing", "score": 4 }
+      { "text": "مدیتیشن یا چرت زدن", "score": 1 },
+      { "text": "پیاده روی یا ورزش", "score": 2 },
+      { "text": "تماس با دوست", "score": 3 },
+      { "text": "نقاشی یا نوشتن", "score": 4 }
     ]
   },
   {
     "id": 9,
-    "question": "Which word best describes you?",
+    "question": "کدام کلمه بیشتر شما را توصیف می کند؟",
     "options": [
-      { "text": "Calm", "score": 1 },
-      { "text": "Energetic", "score": 2 },
-      { "text": "Social", "score": 3 },
-      { "text": "Creative", "score": 4 }
+      { "text": "آرام", "score": 1 },
+      { "text": "پرانرژی", "score": 2 },
+      { "text": "اجتماعی", "score": 3 },
+      { "text": "خلاق", "score": 4 }
     ]
   },
   {
     "id": 10,
-    "question": "Where would you travel right now?",
+    "question": "اگر اکنون می توانستید به هر جایی سفر کنید، کجا می رفتید؟",
     "options": [
-      { "text": "A peaceful mountain retreat", "score": 1 },
-      { "text": "A vibrant city", "score": 2 },
-      { "text": "A cultural festival", "score": 3 },
-      { "text": "An artist’s haven", "score": 4 }
+      { "text": "یک پناهگاه کوهستانی آرام", "score": 1 },
+      { "text": "یک شهر پر جنب و جوش", "score": 2 },
+      { "text": "یک جشنواره فرهنگی", "score": 3 },
+      { "text": "یک مکان هنری", "score": 4 }
     ]
   }
 ]
