@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "How do you feel most mornings?",
+    "options": [
+      { "text": "Calm and relaxed", "score": 1 },
+      { "text": "Energized and productive", "score": 2 },
+      { "text": "Social and interactive", "score": 3 },
+      { "text": "Creative and inspired", "score": 4 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which environment do you prefer?",
+    "options": [
+      { "text": "A quiet, cozy space", "score": 1 },
+      { "text": "A bustling, lively area", "score": 2 },
+      { "text": "A stylish, trendy spot", "score": 3 },
+      { "text": "An eclectic, artsy venue", "score": 4 }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "How do you handle stress?",
+    "options": [
+      { "text": "Relaxing and unwinding", "score": 1 },
+      { "text": "Staying active", "score": 2 },
+      { "text": "Talking to friends", "score": 3 },
+      { "text": "Engaging in creative activities", "score": 4 }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What's your favorite weekend activity?",
+    "options": [
+      { "text": "Reading or watching movies", "score": 1 },
+      { "text": "Outdoor adventures", "score": 2 },
+      { "text": "Socializing with friends", "score": 3 },
+      { "text": "Creative hobbies", "score": 4 }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which color resonates with you most?",
+    "options": [
+      { "text": "Blue (Calm and serene)", "score": 1 },
+      { "text": "Red (Passionate and energetic)", "score": 2 },
+      { "text": "Green (Balanced and harmonious)", "score": 3 },
+      { "text": "Yellow (Cheerful and optimistic)", "score": 4 }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What type of music do you prefer?",
+    "options": [
+      { "text": "Classical or instrumental", "score": 1 },
+      { "text": "Rock or pop", "score": 2 },
+      { "text": "Jazz or blues", "score": 3 },
+      { "text": "Indie or alternative", "score": 4 }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "How do you start your day?",
+    "options": [
+      { "text": "With a relaxing routine", "score": 1 },
+      { "text": "With a workout", "score": 2 },
+      { "text": "With a social activity", "score": 3 },
+      { "text": "With a creative project", "score": 4 }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What's your go-to break activity?",
+    "options": [
+      { "text": "Meditating or napping", "score": 1 },
+      { "text": "Walking or exercising", "score": 2 },
+      { "text": "Calling a friend", "score": 3 },
+      { "text": "Drawing or writing", "score": 4 }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Which word best describes you?",
+    "options": [
+      { "text": "Calm", "score": 1 },
+      { "text": "Energetic", "score": 2 },
+      { "text": "Social", "score": 3 },
+      { "text": "Creative", "score": 4 }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Where would you travel right now?",
+    "options": [
+      { "text": "A peaceful mountain retreat", "score": 1 },
+      { "text": "A vibrant city", "score": 2 },
+      { "text": "A cultural festival", "score": 3 },
+      { "text": "An artist’s haven", "score": 4 }
+    ]
+  }
+]

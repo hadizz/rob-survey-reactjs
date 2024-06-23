@@ -1,25 +1,113 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import questions from './data.json'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const drinks = [
+    {name: "Herbal Tea", minScore: 10, maxScore: 15},
+    {name: "Latte", minScore: 16, maxScore: 20},
+    {name: "Cappuccino", minScore: 21, maxScore: 25},
+    {name: "Espresso", minScore: 26, maxScore: 30}
+];
 
-export default App;
+const getRecommendation = (totalScore) => {
+    for (let drink of drinks) {
+        if (totalScore >= drink.minScore && totalScore <= drink.maxScore) {
+            return drink.name;
+        }
+    }
+    return "Water";
+};
+
+const CoffeeRecommendation = () => {
+    const [answers, setAnswers] = useState({});
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [result, setResult] = useState(null);
+
+    const handleChange = (questionId, score) => {
+        setAnswers({
+            ...answers,
+            [questionId]: score
+        });
+    };
+
+    const handleSubmit = async () => {
+        const totalScore = Object.values(answers).reduce((acc, score) => acc + score, 0);
+        const recommendation = getRecommendation(totalScore);
+        setResult(recommendation);
+
+        // Send data to Google Sheets
+        const response = await fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+            method: 'POST',
+            body: JSON.stringify({name, phone, recommendation}),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            console.log('Data sent to Google Sheets');
+        } else {
+            console.error('Error sending data to Google Sheets');
+        }
+    };
+
+    return (
+        <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
+            <h1 className="text-3xl font-bold mb-6">Find Your Perfect Coffee Drink</h1>
+            <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                        Full Name:
+                    </label>
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                        Phone Number:
+                    </label>
+                    <input
+                        type="text"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                    />
+                </div>
+                {questions.map(question => (
+                    <div key={question.id} className="mb-4">
+                        <p className="text-gray-700 font-semibold mb-2">{question.question}</p>
+                        {question.options.map(option => (
+                            <label key={option.text} className="block">
+                                <input
+                                    type="radio"
+                                    name={`question-${question.id}`}
+                                    value={option.score}
+                                    onChange={() => handleChange(question.id, option.score)}
+                                    className="mr-2"
+                                />
+                                {option.text}
+                            </label>
+                        ))}
+                    </div>
+                ))}
+                <button
+                    onClick={handleSubmit}
+                    className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+                >
+                    Get Recommendation
+                </button>
+            </div>
+            {result && (
+                <div className="mt-6 p-4 bg-green-100 text-green-700 rounded-lg">
+                    <h2 className="text-xl font-semibold">We recommend you to try: {result}</h2>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default CoffeeRecommendation;
